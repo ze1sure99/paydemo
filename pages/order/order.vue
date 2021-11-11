@@ -10,7 +10,8 @@
 			</view>
 			<view class="line-3">
 				<text>金额：{{one.amount}}</text>
-				<button class="pay-btn" type="primary" v-if="one.status=='未付款'">付款</button>
+				<button class="pay-btn" type="primary" v-if="one.status=='未付款'"
+				@tap="pay(one.id)">付款</button>
 			</view>
 		</view>
 	</view>
@@ -24,7 +25,22 @@
 			}
 		},
 		methods: {
-			
+			pay:function(id){
+				let me = this;
+				uni.request({
+					url:me.url.microAppPayOrder,
+					method:"POST",
+					header:{
+						"token":uni.getStorageSync("token")
+					},
+					data:{
+						"orderId":id
+					},
+					success:function(res){
+						console.log(res)
+					}
+				})
+			}
 		},
 		onShow:function(){
 			let me = this;

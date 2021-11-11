@@ -8596,9 +8596,9 @@ function resolveLocaleChain(locale) {
 
 /***/ }),
 /* 5 */
-/*!*****************************************************************!*\
-  !*** /Users/zhaozixu/Desktop/HbuilderXProjects/demo/pages.json ***!
-  \*****************************************************************/
+/*!********************************************************************!*\
+  !*** /Users/zhaozixu/Desktop/HbuilderXProjects/paydemo/pages.json ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

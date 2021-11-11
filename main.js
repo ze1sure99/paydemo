@@ -12,6 +12,7 @@ let baseUrl = "http://localhost:8080/renren-fast"
 //prototype可以给vue对象添加属性和行为
 Vue.prototype.url={
      "wxLogin": baseUrl+"/app/wx/login",
-	 "searchUserOrderList":baseUrl + "/app/order/searchUserOrderList"
+	 "searchUserOrderList":baseUrl + "/app/order/searchUserOrderList",
+	 "microAppPayOrder":baseUrl+"/app/wx/microAppPayOrder"
 }
 // #endif
